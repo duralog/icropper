@@ -55,7 +55,7 @@
             node.className = arr.join(' ');
         }
         ,fixEvent: function(evt){
-            evt = evt || event; 
+            evt = evt || event;
             if(!evt.target)evt.target = evt.srcElement;
             if(!evt.keyCode)evt.keyCode = evt.which || evt.charCode;
             if(!evt.pageX){//only for IE
@@ -66,7 +66,7 @@
         }
     };
 
-    window.ICropper = function (container, options){
+    exports.ICropper = function (container, options){
         // summary:
         //  Constructor of the Image Cropper, the container could be a dom node or id.
 
@@ -155,7 +155,7 @@
                 if(w2 >= width)w2 = width;
                 if(h2 >= height)h2 = height;
                 util.style(node, {width: w2 + 'px', height: h2 + 'px'});
-                
+
                 var rateX =  w2/info.w
                     ,rateY = h2/info.h
                     ;
@@ -203,7 +203,7 @@
             util.connect(document, 'mouseup', this, '_onMouseUp');
             util.connect(document, 'mousemove', this, '_onMouseMove');
             this.image && this.setImage(this.image);
-            
+
             if(this.preview){
                 var self = this;
                 util.each(this.preview, function(node){
@@ -252,7 +252,7 @@
                     var _w2 = h2*this.ratio, _h2 = w2/this.ratio;
                     if(w2 > _w2)w2 = _w2;
                     if(h2 > _h2)h2 = _h2;
-                   
+
                 }
                 w2 += 'px';
                 h2 += 'px';
@@ -270,7 +270,7 @@
 
             s.left = l + 'px';
             s.top = t + 'px';
-     
+
             this._posArchors();
             this._posBlocks();
             this.onChange(this.getInfo());
@@ -382,7 +382,7 @@
             s.left = l + 'px';
             s.top = t + 'px'
         }
-        
+
         ,_doResize: function(e) {
             var m = this.dragging
                 ,s = this.cropNode.style

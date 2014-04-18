@@ -1,15 +1,15 @@
 {
-    "name": "icropper",
-    "repo": "duralog/icropper",
-    "description": "iCropper is aims to be simple, fast and easy to use photo cropper.",
-    "version": "1.0.0",
-    "keywords": ["ui", "jquery", "cropper"],
-    "dependencies": {},
-    "development": {},
-    "scripts": {
-        "icropper.js": "icropper.js"
-    },
-    "styles": {
-        "icropper.css": "icropper.css"
-    }
+	"name": "icropper",
+	"repo": "duralog/icropper",
+	"description": "iCropper is aims to be simple, fast and easy to use photo cropper.",
+	"version": "1.0.0",
+	"keywords": ["ui", "jquery", "cropper"],
+	"dependencies": {},
+	"development": {},
+	"scripts": [
+		"icropper.js"
+	],
+	"styles": [
+		"icropper.css"
+	]
 }
